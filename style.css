@@ -1,3 +1,49 @@
+* {
+  margin: 0;
+  padding: 0; }
 
+body {
+  background: #cc3333; }
+
+.header-top {
+  display: flex;
+  font-size: 1.3rem;
+  margin: 1rem 5rem; }
+  .header-top .company-logo {
+    font-size: 2rem; }
+  .header-top .header-top-right {
+    margin-left: auto; }
+
+nav {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.1rem;
+  background: black;
+  margin: 3rem 5rem;
+  border-radius: .3rem; }
+  nav ul {
+    display: flex;
+    align-items: center; }
+  nav li {
+    list-style: none; }
+  nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 1.7rem; }
+    nav a:hover {
+      background: #133337; }
+  nav li:last-child {
+    margin-left: auto;
+    margin-right: 2rem;
+    position: relative; }
+    nav li:last-child input {
+      padding: .7rem 1rem;
+      border: none;
+      border-radius: .3rem;
+      background: #c0c5ce; }
+    nav li:last-child .fa-search {
+      position: absolute;
+      top: 30%;
+      left: 85%; }
 
 /*# sourceMappingURL=style.css.map */
