@@ -3,12 +3,12 @@
   padding: 0; }
 
 body {
-  background: #cc3333; }
+  background: #c40311; }
 
 .header-top {
   display: flex;
   font-size: 1.3rem;
-  margin: 1rem 5rem; }
+  margin: 2% 4%; }
   .header-top .company-logo {
     font-size: 2rem; }
   .header-top .header-top-right {
@@ -18,8 +18,7 @@ nav {
   font-family: 'Questrial', sans-serif;
   font-size: 1.1rem;
   background: black;
-  margin: 0 5rem;
-  margin-top: 3rem;
+  margin: 0 4%;
   border-radius: .3rem; }
   nav .hamburgerButton {
     display: none; }
@@ -37,7 +36,7 @@ nav {
       background: #133337; }
   nav li:last-child {
     margin-left: auto;
-    margin-right: 2rem;
+    margin-right: 2%;
     position: relative; }
     nav li:last-child input {
       padding: .7rem 1rem;
@@ -50,15 +49,61 @@ nav {
       left: 85%; }
 
 .showcase {
-  margin: 0 5rem; }
-  .showcase .img-container {
-    overflow: hidden;
-    height: 70vh; }
-  .showcase img {
-    width: 100%; }
+  background: url(img/superbike.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 52.5%;
+  margin: 0 4%;
+  border: 1px solid black; }
   .showcase .showcase-caption {
-    background: black;
-    color: white; }
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: .5rem;
+    text-align: center; }
+
+.product-category {
+  margin: 0 4%;
+  padding: 2% 0;
+  background: #C0C0C0;
+  height: 50rem; }
+
+.product-images {
+  display: flex;
+  justify-content: space-between; }
+  .product-images .box-1 {
+    background: url(img/yamaha.jpg); }
+  .product-images .box-2 {
+    background: url(img/honda.jpg); }
+  .product-images .box-3 {
+    background: url(img/ducati.jpg); }
+  .product-images .box-4 {
+    background: url(img/suzuki.jpg); }
+  .product-images .image-box {
+    position: relative;
+    width: 23%;
+    padding-top: 10%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #36bce2;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
+    .product-images .image-box a {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      width: 100%;
+      padding: .5rem 0; }
+      .product-images .image-box a:hover {
+        background: rgba(54, 188, 226, 0.8);
+        color: black; }
+  .product-images .product-detail {
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center; }
+
+.companies {
+  margin: 2% 4%; }
 
 @media (max-width: 950px) {
   nav ul li {
@@ -86,13 +131,50 @@ nav {
     margin: 1rem 0; }
     .last-li-positioning input {
       margin-left: 1.5rem; } }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+  .showcase .showcase-caption {
+    font-size: 2rem; }
+
+  .product-images {
+    flex-wrap: wrap; }
+    .product-images div {
+      flex-basis: 40%; }
+    .product-images .box-1, .product-images .box-2 {
+      margin-bottom: 3%; }
+    .product-images .box-1, .product-images .box-3 {
+      margin-left: 3%; }
+    .product-images .box-2, .product-images .box-4 {
+      margin-right: 3%; } }
+@media (max-width: 500px) {
   .header-top {
     flex-wrap: wrap; }
     .header-top div {
-      flex-basis: 100%;
+      text-align: center;
+      flex-basis: 100%; }
+    .header-top div:last-child {
       margin-top: 3%; }
-    .header-top .company-logo, .header-top .header-top-right {
-      margin-left: 20%; } }
+
+  .showcase .showcase-caption {
+    font-size: 1.5rem; }
+
+  .image-box .product-detail {
+    font-size: .7rem; }
+
+  .product-images .image-box a {
+    padding: .3rem 0; } }
+@media (max-width: 400px) {
+  .showcase .showcase-caption {
+    font-size: 1.3rem; }
+
+  .product-images div {
+    flex-basis: 100%; }
+  .product-images .box-1, .product-images .box-2, .product-images .box-3, .product-images .box-4 {
+    margin: 2% 20%; }
+
+  .product-images .image-box a {
+    padding: .2rem 0; }
+
+  .product-images .image-box {
+    padding-top: 18%; } }
 
 /*# sourceMappingURL=style.css.map */
